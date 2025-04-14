@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="fa_IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Document</title>
+  </head>
+  <body
+    class="px-6 flex flex-col gap-5 dark:text-amber-50 bg-gradient-to-b from-linear-color to-light dark:bg-gradient-to-b dark:from-linear-blue-dark dark:to-dark-blue min-h-screen">
+    <!-- header -->
+    <header
+      class="bg-light dark:bg-head-dark py-3 px-4 fixed top-0 left-0 w-full z-50">
+      <div
+        class="text-t-light dark:text-amber-50 flex justify-start w-full sm:hidden"
+      >
+          <svg
+          class="cursor-pointer"
+          width="24"
+          height="25"
+          viewBox="0 0 24 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          >
+          <path
+            d="M3 7.5H21"
+            stroke="black"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+          <path
+            d="M3 12.5H21"
+            stroke="black"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+          <path
+            d="M3 17.5H21"
+            stroke="black"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+        <h3 class="mx-auto">کوئرا لیست</h3>
+      </div>
+      <div class="hidden sm:block px-4">
+        <div class="flex justify-between">
+          <ul class="flex dark:text-blue-50 sm:gap-4 md:gap-10 items-center">
+            <li class="font-blod">کوئرا لیست</li>
+            <li class="font-light"><a href="#">صفحه اصلی</a></li>
+            <li class="font-light"><a href="#"></a>درباره ما</li>
+            <li class="font-light"><a href="#"></a>ارتباط با ما</li>
+          </ul>
+          <div class="flex gap-2">
+            <button
+              class="bg-light-blue hover:bg-hover-light px-6 py-2 text-light"
+              type="button"
+            >
+              ورود به اپلیکیشن
+            </button>
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="0.5"
+                width="39"
+                height="39"
+                rx="5.5"
+                stroke="#E3E3E3"
+              />
+              <path
+                d="M20.5856 25.1379V14.931C20.5856 14.7931 20.5166 14.7242 20.3787 14.7242C17.4132 14.7242 15.0684 17.069 15.0684 20.0345C15.0684 23 17.4132 25.3448 20.3787 25.3448C20.4477 25.4138 20.5856 25.2759 20.5856 25.1379Z"
+                fill="#5C5F61"
+              />
+              <path
+                d="M25.9653 19.8965C25.8274 17.3448 24.0343 15.2759 21.5515 14.8621C21.4136 14.8621 21.3446 14.931 21.2756 15.069C21.2756 15.1379 21.2756 15.2069 21.3446 15.2759C22.7929 16.3793 23.6894 18.1034 23.6894 19.9655C23.8963 21.9655 22.9998 23.8965 21.3446 25.069C21.2756 25.1379 21.2067 25.2759 21.2756 25.3448C21.3446 25.4138 21.4136 25.4138 21.4825 25.4138C21.4825 25.4138 21.4825 25.4138 21.5515 25.4138C24.1722 24.931 26.0343 22.5862 25.9653 19.8965Z"
+                fill="#5C5F61"
+              />
+              <path
+                d="M20.3105 13.5517C20.6553 13.5517 20.8622 13.2759 20.8622 13V9.55172C20.8622 9.2069 20.5864 9 20.3105 9C19.9657 9 19.7588 9.27586 19.7588 9.55172V12.931C19.7588 13.2759 20.0347 13.5517 20.3105 13.5517Z"
+                fill="#5C5F61"
+              />
+              <path
+                d="M14.9307 15.4138C15.1376 15.6207 15.4824 15.6207 15.7582 15.4138C15.9651 15.2069 15.9651 14.8621 15.7582 14.5862L13.4134 12.2414C13.2065 12.0345 12.8617 12.0345 12.5858 12.2414C12.3789 12.4483 12.3789 12.7931 12.5858 13.069L14.9307 15.4138Z"
+                fill="#5C5F61"
+              />
+              <path
+                d="M20.3105 26.5172C19.9657 26.5172 19.7588 26.7931 19.7588 27.069V30.4483C19.7588 30.7931 20.0347 31 20.3105 31C20.5864 31 20.8622 30.7241 20.8622 30.4483V27.069C20.9312 26.7931 20.6553 26.5172 20.3105 26.5172Z"
+                fill="#5C5F61"
+              />
+              <path
+                d="M15.3445 24.4483C15.2065 24.4483 15.0686 24.5172 14.9307 24.5862L12.5858 26.931C12.3789 27.1379 12.3789 27.4828 12.5858 27.7586C12.7927 27.9655 13.1376 27.9655 13.4134 27.7586L15.7582 25.4138C15.9651 25.2069 15.9651 24.8621 15.7582 24.5862C15.6203 24.5172 15.4824 24.4483 15.3445 24.4483Z"
+                fill="#5C5F61"
+              />
+              <path
+                d="M13.8276 20.0345C13.8276 19.6897 13.5517 19.4828 13.2759 19.4828H9.55172C9.2069 19.4828 9 19.7586 9 20.1034C9 20.3793 9.27586 20.6552 9.55172 20.6552H13.2069C13.5517 20.5862 13.8276 20.3793 13.8276 20.0345Z"
+                fill="#5C5F61"
+              />
+              <path
+                d="M27.2755 13.5517C26.5858 13.3448 26.4479 13.2069 26.31 12.3104C26.31 12.2414 26.241 12.1724 26.172 12.1724C26.1031 12.1724 26.0341 12.2414 26.0341 12.3104C25.8962 13.2069 25.7582 13.3448 25.0686 13.5517C24.9996 13.5517 24.9307 13.6897 24.9307 13.7586C24.9307 13.8276 24.9996 13.8276 25.0686 13.8966C25.7582 14.1035 25.8962 14.2414 26.0341 15.1379C26.0341 15.2069 26.1031 15.2759 26.172 15.2759C26.241 15.2759 26.31 15.2069 26.31 15.1379C26.4479 14.2414 26.5858 14.1035 27.2755 13.8966C27.3445 13.8966 27.4134 13.7586 27.4134 13.6897C27.3445 13.5517 27.3445 13.5517 27.2755 13.5517Z"
+                fill="#5C5F61"
+              />
+              <path
+                d="M27.2755 26.5172C26.5858 26.3104 26.4479 26.1724 26.31 25.2759C26.31 25.2069 26.241 25.1379 26.172 25.1379C26.1031 25.1379 26.0341 25.2069 26.0341 25.2759C25.8962 26.1724 25.7582 26.3104 25.0686 26.5172C24.9996 26.5172 24.9307 26.6552 24.9307 26.7241C24.9307 26.7931 24.9996 26.7931 25.0686 26.8621C25.7582 27.069 25.8962 27.2069 26.0341 28.1035C26.0341 28.1724 26.1031 28.2414 26.172 28.2414C26.241 28.2414 26.31 28.1724 26.31 28.1035C26.4479 27.2069 26.5858 27.069 27.2755 26.8621C27.3445 26.8621 27.4134 26.7931 27.4134 26.7241C27.4134 26.5862 27.3445 26.5172 27.2755 26.5172Z"
+                fill="#5C5F61"
+              />
+              <path
+                d="M30.5175 19.8276C29.552 19.5517 29.4141 19.2759 29.2072 18.1034C29.2072 18.0345 29.1382 17.9655 29.0692 17.9655C29.0003 17.9655 28.9313 18.0345 28.9313 18.1034C28.7244 19.2759 28.5175 19.4828 27.552 19.7586C27.483 19.7586 27.4141 19.8276 27.4141 19.9655C27.4141 20.0345 27.483 20.0345 27.483 20.1034C28.4485 20.3793 28.5865 20.6552 28.7934 21.8276C28.7934 21.8965 28.8623 21.9655 28.9313 21.9655C29.0003 21.9655 29.0692 21.8965 29.0692 21.8276C29.2761 20.6552 29.483 20.4483 30.4485 20.1724C30.5175 20.1724 30.5865 20.1034 30.5865 19.9655C30.5865 19.8965 30.5865 19.8276 30.5175 19.8276Z"
+                fill="#5C5F61"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="flex flex-col gap-8">
+      <!-- hero section -->
+      <section class="pt-16 flex justify-center">
+        <div class="pt-16 flex flex-col items-center">
+          <h2 class="z-10 font-thin text-2xl sm:text-3xl justify-center p-4">
+            تمرکز را وارد زندگیت کن
+          </h2>
+          <h1 class="font-black z-10 text-2xl sm:text-6xl">
+            به سمت اهداف اوج بگیر
+          </h1>
+          <!-- khat abi mobile -->
+          <svg
+            class="relative sm:hidden"
+            width="108"
+            height="11"
+            viewBox="0 0 108 11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.99931 8.78032C1.99931 8.78032 21.2148 3.73979 52.1342 2.87587C83.0537 2.01195 105.585 7.09068 105.585 7.09068"
+              stroke="#2C7EF8"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+          </svg>
+          <!-- khat abi pc -->
+          <svg
+            class="hidden z-10 sm:block sm:w-1/2"
+            width="318"
+            height="36"
+            viewBox="0 0 318 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.92736 31.3433C4.92736 31.3433 61.4186 13.7984 153.28 7.12406C245.142 0.449703 312.841 12.5664 312.841 12.5664"
+              stroke="#2C7EF8"
+              stroke-width="9"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <!-- star -->
+          <svg
+            class="absolute dark:hidden z-10 top-2/12 right-9 sm:right-2/12 sm:top-2/12"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10.6178 0.9886C11.0679 -0.329535 12.9321 -0.329531 13.3822 0.9886L15.8334 8.16657L23.0114 10.6178C24.3295 11.0679 24.3295 12.9321 23.0114 13.3822L15.8334 15.8334L13.3822 23.0114C12.9321 24.3295 11.0679 24.3295 10.6178 23.0114L8.16657 15.8334L0.9886 13.3822C-0.329535 12.9321 -0.329532 11.0679 0.9886 10.6178L8.16657 8.16657L10.6178 0.9886Z"
+              fill="#2C7EF8"
+            />
+          </svg>
+          <svg
+            class="absolute hidden dark:block z-10 top-2/12 right-9 sm:right-2/12 sm:top-2/12"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.157 1.31813C14.7572 -0.43938 17.2428 -0.439375 17.843 1.31813L21.1112 10.8888L30.6819 14.157C32.4394 14.7572 32.4394 17.2428 30.6819 17.843L21.1112 21.1112L17.843 30.6819C17.2428 32.4394 14.7572 32.4394 14.157 30.6819L10.8888 21.1112L1.31813 17.843C-0.43938 17.2428 -0.439375 14.7572 1.31813 14.157L10.8888 10.8888L14.157 1.31813Z"
+              fill="white"
+            />
+          </svg>
+          <!-- star 2 -->
+          <svg
+            class="absolute dark:hidden z-10 top-60 left-10 sm:left-2/12"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10.6178 0.9886C11.0679 -0.329535 12.9321 -0.329531 13.3822 0.9886L15.8334 8.16657L23.0114 10.6178C24.3295 11.0679 24.3295 12.9321 23.0114 13.3822L15.8334 15.8334L13.3822 23.0114C12.9321 24.3295 11.0679 24.3295 10.6178 23.0114L8.16657 15.8334L0.9886 13.3822C-0.329535 12.9321 -0.329532 11.0679 0.9886 10.6178L8.16657 8.16657L10.6178 0.9886Z"
+              fill="#2C7EF8"
+            />
+          </svg>
+          <svg
+            class="absolute hidden dark:block z-10 top-6/12 left-1/12 sm:top-5/12 sm:left-2/12"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.157 1.31813C14.7572 -0.43938 17.2428 -0.439375 17.843 1.31813L21.1112 10.8888L30.6819 14.157C32.4394 14.7572 32.4394 17.2428 30.6819 17.843L21.1112 21.1112L17.843 30.6819C17.2428 32.4394 14.7572 32.4394 14.157 30.6819L10.8888 21.1112L1.31813 17.843C-0.43938 17.2428 -0.439375 14.7572 1.31813 14.157L10.8888 10.8888L14.157 1.31813Z"
+              fill="white"
+            />
+          </svg>
+          <!-- circle 1 goshi -->
+          <svg
+            class="absolute overflow-hidden md:hidden dark:hidden top1/12 z-0 left-1"
+            width="114"
+            height="228"
+            viewBox="0 0 114 228"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <ellipse
+              opacity="0.5"
+              cx="2.3368e-06"
+              cy="114"
+              rx="114"
+              ry="114"
+              transform="rotate(-180 2.3368e-06 114)"
+              fill="url(#paint0_linear_46_3419)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_46_3419"
+                x1="13.6195"
+                y1="56.7478"
+                x2="54.753"
+                y2="184.816"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#EFEBFF" stop-opacity="0" />
+                <stop offset="1" stop-color="#EBEBFB" />
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <!-- circle pc 1 -->
+          <svg
+            class="absolute overflow-hidden dark:hidden hidden md:block z-0 scale-75 top-8 left-0"
+            width="452"
+            height="452"
+            viewBox="0 0 452 452"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <ellipse
+              opacity="0.6"
+              cx="226"
+              cy="226"
+              rx="226"
+              ry="226"
+              transform="rotate(-180 226 226)"
+              fill="url(#paint0_linear_46_1340)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_46_1340"
+                x1="209"
+                y1="110"
+                x2="300.593"
+                y2="375.842"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#EFEBFF" stop-opacity="0" />
+                <stop offset="1" stop-color="#E0EDFF" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <!-- circle pc 2 -->
+          <svg
+            class="absolute overflow-hidden dark:hidden hidden md:block z-0 scale-75 top-3/12 right-0"
+            width="452"
+            height="452"
+            viewBox="0 0 452 452"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <ellipse
+              opacity="0.6"
+              cx="226"
+              cy="226"
+              rx="226"
+              ry="226"
+              transform="rotate(-180 226 226)"
+              fill="url(#paint0_linear_46_1340)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_46_1340"
+                x1="209"
+                y1="110"
+                x2="300.593"
+                y2="375.842"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#EFEBFF" stop-opacity="0" />
+                <stop offset="1" stop-color="#E0EDFF" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="z-10 p-10 justify-center text-center text-xl md:text-2xl">
+            زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه
+            از آن استفاده می‌کنیم. با اپلیکیشن کوییرا لیست، زمان خود را با هدف و
+            برنامه‌ریزی موثر سپری کنید."
+          </div>
+          <div class="flex gap-4">
+            <button
+              class="text-amber-50 hover:bg-hover-light rounded-2xl p-3 md:p-4 bg-light-blue"
+            >
+              ورود به اپلیکیشن
+            </button>
+            <button
+              class="text-light-blue hover:bg-hover-light hover:text-teal-50 rounded-2xl text-xl p-3 md:p-4 bg-linear-color"
+            >
+              درباره ما
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="scale-100 flex justify-center">
+        <img src="../img/c3dfc591ca64b764f193477569f06c92.png" alt="..." />
+      </div>
+      <div class="flex flex-col items-center gap-4">
+        <div class="flex flex-col gap-2 items-center">
+          <h2 class="text-center text-2xl sm:text-3xl font-black">
+            ویژگی‌های اپلیکیشن کوئرالیست
+          </h2>
+          <p class="text-center font-light sm:font-normal">
+            زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه
+            از آن استفاده می‌کنیم. با اپلیکیشن کوییرا لیست، زمان خود را با هدف و
+            برنامه‌ریزی موثر سپری کنید."
+          </p>
+        </div>
+        <!-- card -->
+        <div
+          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+          <div class="flex flex-col items-center gap-2 p-2">
+            <svg
+              class="md:scale-125"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_46_3455)">
+                <path
+                  d="M7.3125 1.33301H5.97917C2.64583 1.33301 1.3125 2.66634 1.3125 5.99967V9.99967C1.3125 13.333 2.64583 14.6663 5.97917 14.6663H9.97917C13.3125 14.6663 14.6458 13.333 14.6458 9.99967V8.66634"
+                  stroke="#2C7EF8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.5824 2.37315C13.7624 4.41982 11.7024 7.20649 9.9824 8.58649L8.92906 9.42649C8.79573 9.52649 8.6624 9.60649 8.50906 9.66649C8.50906 9.56649 8.5024 9.46649 8.48906 9.35982C8.42906 8.91315 8.22906 8.49315 7.86906 8.13982C7.5024 7.77315 7.0624 7.56649 6.60906 7.50649C6.5024 7.49982 6.39573 7.49315 6.28906 7.49982C6.34906 7.33315 6.43573 7.17982 6.54906 7.05315L7.38906 5.99982C8.76906 4.27982 11.5624 2.20649 13.6024 1.38649C13.9157 1.26649 14.2224 1.35982 14.4157 1.55315C14.6157 1.75315 14.7091 2.05982 14.5824 2.37315Z"
+                  stroke="#2C7EF8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.51485 9.66064C8.51485 10.2473 8.28819 10.8073 7.86819 11.234C7.54152 11.5606 7.10152 11.7873 6.57485 11.854L5.26152 11.994C4.54819 12.074 3.93485 11.4673 4.01485 10.7406L4.15485 9.42731C4.28152 8.26064 5.25485 7.51397 6.29485 7.49397C6.40152 7.48731 6.50819 7.49397 6.61485 7.50064C7.06819 7.56064 7.50819 7.76731 7.87485 8.13397C8.23485 8.49397 8.43485 8.90731 8.49485 9.35397C8.50819 9.46064 8.51485 9.56731 8.51485 9.66064Z"
+                  stroke="#2C7EF8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.5501 7.98663C10.5501 6.59329 9.42344 5.45996 8.02344 5.45996"
+                  stroke="#2C7EF8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_46_3455">
+                  <rect width="16" height="16" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <h3 class="text-xl">رابط کاربری جذاب</h3>
+            <p class="text-center">
+              اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-2 p-2">
+            <svg
+              class="md:scale-125"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z"
+                stroke="#2C7EF8"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z"
+                stroke="#2C7EF8"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z"
+                stroke="#2C7EF8"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z"
+                stroke="#2C7EF8"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h3 class="flex-nowrap text-lg text-center">
+              قابلیت دسته‌بندی کارها
+            </h3>
+            <p class="text-center">
+              اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-2 p-2">
+            <svg
+              class="md:scale-125"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.61971 8.49C5.58971 -0.169998 18.4197 -0.159997 20.3797 8.5C21.5297 13.58 18.3697 17.88 15.5997 20.54C13.5897 22.48 10.4097 22.48 8.38971 20.54C5.62971 17.88 2.46971 13.57 3.61971 8.49Z"
+                stroke="#2C7EF8"
+                stroke-width="1.5"
+              />
+              <path
+                d="M9.25 11.5L10.75 13L14.75 9"
+                stroke="#2C7EF8"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h3 class="text-xl">دسترسی آسان</h3>
+            <p class="text-center">
+              اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-2 p-2">
+            <svg
+              class="md:scale-125"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 18.86H17.24C16.44 18.86 15.68 19.17 15.12 19.73L13.41 21.42C12.63 22.19 11.36 22.19 10.58 21.42L8.87 19.73C8.31 19.17 7.54 18.86 6.75 18.86H6C4.34 18.86 3 17.53 3 15.89V4.97998C3 3.33998 4.34 2.01001 6 2.01001H18C19.66 2.01001 21 3.33998 21 4.97998V15.89C21 17.52 19.66 18.86 18 18.86Z"
+                stroke="#2C7EF8"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M11.9999 10.0001C13.2868 10.0001 14.33 8.95687 14.33 7.67004C14.33 6.38322 13.2868 5.34009 11.9999 5.34009C10.7131 5.34009 9.66992 6.38322 9.66992 7.67004C9.66992 8.95687 10.7131 10.0001 11.9999 10.0001Z"
+                stroke="#2C7EF8"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M16 15.6601C16 13.8601 14.21 12.4001 12 12.4001C9.79 12.4001 8 13.8601 8 15.6601"
+                stroke="#2C7EF8"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h3 class="text-xl">پشتیبانی آنلاین</h3>
+            <p class="text-center">
+              اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+            </p>
+          </div>
+        </div>
+        <!-- اپلیکیشن اندروید و IOS -->
+        <div class="pt-10">
+          <div class="flex gap-16">
+            <div class="flex flex-col items-center sm:w-[50%] gap-2">
+              <div class="mx-auto">
+                <h3 class="text-xl sm:text-sm lg:text-xl">
+                  اپلیکیشن اندروید و IOS
+                </h3>
+              </div>
+              <div class="">
+                <h2 class="text-4xl sm:text-2xl lg:text-2xl">
+                  دانلود اپلیکیشن
+                </h2>
+              </div>
+              <div class="pt-4 flex flex-col items-center">
+                <img
+                  class="sm:hidden"
+                  src="../img/Mobile_clay_mockup.png"
+                  alt=""
+                />
+                <p class="text-center text-base lg:text-lg pt-4">
+                  کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای
+                  معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل
+                  علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی
+                  بر وب آن استفاده نمایند. همچنین کاربران سیستم عامل اپل علاوه
+                  بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب
+                  آن استفاده نمایند.
+                </p>
+                <div class="flex gap-4 p-4 justify-center items-center">
+                  <a
+                    class="text-light-blue dark:text-amber-50 text-sm sm:text-normal text-nowrap lg:text-xl"
+                    href=""
+                    >ورود به اپلیکیشن</a
+                  >
+                  <svg
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.57031 18.5701L3.50031 12.5001L9.57031 6.43007"
+                      stroke="#2C7EF8"
+                      stroke-width="2.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M20.5 12.5L3.67 12.5"
+                      stroke="#2C7EF8"
+                      stroke-width="2.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="hidden sm:block">
+              <img class="h-full" src="../img/Group 47490.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- نظرات کاربران -->
+      </main>
+      <footer class="flex container flex-col gap-4 mx-auto px-2">
+      <!-- header footer -->
+      <div class="flex content-center gap-2 items-center justify-center">
+        <div
+          class="bg-slate-600 items-center h-[1px] w-16 sm:w-40 lg:w-80"
+        ></div>
+        <div class="text-xl text-nowrap sm:text-2xl">کوئرا لیست</div>
+        <div
+          class="bg-slate-600 items-center h-[1px] w-16 sm:w-40 lg:w-80"
+        ></div>
+      </div>
+      <!-- footer main -->
+      <div
+        class="flex flex-col gap-4 p-8 sm:flex-row justify-around sm:justify-between"
+      >
+        <div class="order-1 sm:order-2 sm:pt-12">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-base sm:text-xl">با ما در ارتباط باش</h3>
+            <p class="text-sm sm:text-base">
+              اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر
+              بشی.
+            </p>
+            <div class="flex sm:order-2">
+              <div
+                class="border-2 border-gray-200 flex w-60 justify-between rounded-md"
+              >
+                <input
+                  class="text-sm bg-none p-2"
+                  type="email"
+                  placeholder="ایمیل"
+                />
+                <div class="bg-primary flex text-primary-on-light rounded-md">
+                  <button class="text-sm bg-light-blue items-center scale-90 cursor-pointer px-4 text-back__body">
+                    ارسال
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-2 sm:order-1">
+          <div class="flex gap-3 sm:flex-col sm:order-1">
+            <div
+              class="w-[40%] flex flex-col h-[50%] p-2 sm:w-full sm:flex-row sm:items-center  sm:border-none rounded-lg border2"
+            >
+              <svg
+                class="mx-auto shrink-0"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="40" height="40" rx="20" fill="#F5FBFF" />
+                <path
+                  class="sm:fill-black"
+                  d="M25.7467 17.6334C25.0467 14.5534 22.3601 13.1667 20.0001 13.1667C20.0001 13.1667 20.0001 13.1667 19.9934 13.1667C17.6401 13.1667 14.9467 14.5467 14.2467 17.6267C13.4667 21.0667 15.5734 23.9801 17.4801 25.8134C18.1867 26.4934 19.0934 26.8334 20.0001 26.8334C20.9067 26.8334 21.8134 26.4934 22.5134 25.8134C24.4201 23.9801 26.5267 21.0734 25.7467 17.6334ZM20.0001 20.9734C18.8401 20.9734 17.9001 20.0334 17.9001 18.8734C17.9001 17.7134 18.8401 16.7734 20.0001 16.7734C21.1601 16.7734 22.1001 17.7134 22.1001 18.8734C22.1001 20.0334 21.1601 20.9734 20.0001 20.9734Z"
+                  fill="#2C7EF8"
+                />
+              </svg>
+              <p class="text-sm text-center sm:text-base">
+                آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن
+                بست شب بو
+              </p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <div
+                class="flex gap-2  rounded-xl sm:flex-row sm:items-center sm:border-none p-2"
+              >
+                <div>
+                  <svg
+                    width="41"
+                    height="40"
+                    viewBox="0 0 41 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="0.5"
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="#F5FBFF"
+                    />
+                    <path
+                      class="sm:fill-black"
+                      d="M19.8668 21.9666L18.6335 23.1999C18.3735 23.4599 17.9602 23.4599 17.6935 23.2066C17.6202 23.1333 17.5468 23.0666 17.4735 22.9933C16.7868 22.2999 16.1668 21.5733 15.6135 20.8133C15.0668 20.0533 14.6268 19.2933 14.3068 18.5399C13.9935 17.7799 13.8335 17.0533 13.8335 16.3599C13.8335 15.9066 13.9135 15.4733 14.0735 15.0733C14.2335 14.6666 14.4868 14.2933 14.8402 13.9599C15.2668 13.5399 15.7335 13.3333 16.2268 13.3333C16.4135 13.3333 16.6002 13.3733 16.7668 13.4533C16.9402 13.5333 17.0935 13.6533 17.2135 13.8266L18.7602 16.0066C18.8802 16.1733 18.9668 16.3266 19.0268 16.4733C19.0868 16.6133 19.1202 16.7533 19.1202 16.8799C19.1202 17.0399 19.0735 17.1999 18.9802 17.3533C18.8935 17.5066 18.7668 17.6666 18.6068 17.8266L18.1002 18.3533C18.0268 18.4266 17.9935 18.5133 17.9935 18.6199C17.9935 18.6733 18.0002 18.7199 18.0135 18.7733C18.0335 18.8266 18.0535 18.8666 18.0668 18.9066C18.1868 19.1266 18.3935 19.4133 18.6868 19.7599C18.9868 20.1066 19.3068 20.4599 19.6535 20.8133C19.7202 20.8799 19.7935 20.9466 19.8602 21.0133C20.1268 21.2733 20.1335 21.6999 19.8668 21.9666Z"
+                      fill="#2C7EF8"
+                    />
+                    <path
+                      class="sm:fill-black"
+                      d="M27.1466 24.2201C27.1466 24.4068 27.1132 24.6001 27.0466 24.7868C27.0266 24.8401 27.0066 24.8934 26.9799 24.9468C26.8666 25.1868 26.7199 25.4134 26.5266 25.6268C26.1999 25.9868 25.8399 26.2468 25.4332 26.4134C25.4266 26.4134 25.4199 26.4201 25.4132 26.4201C25.0199 26.5801 24.5932 26.6668 24.1332 26.6668C23.4532 26.6668 22.7266 26.5068 21.9599 26.1801C21.1932 25.8534 20.4266 25.4134 19.6666 24.8601C19.4066 24.6668 19.1466 24.4734 18.8999 24.2668L21.0799 22.0868C21.2666 22.2268 21.4332 22.3334 21.5732 22.4068C21.6066 22.4201 21.6466 22.4401 21.6932 22.4601C21.7466 22.4801 21.7999 22.4868 21.8599 22.4868C21.9732 22.4868 22.0599 22.4468 22.1332 22.3734L22.6399 21.8734C22.8066 21.7068 22.9666 21.5801 23.1199 21.5001C23.2732 21.4068 23.4266 21.3601 23.5932 21.3601C23.7199 21.3601 23.8532 21.3868 23.9999 21.4468C24.1466 21.5068 24.2999 21.5934 24.4666 21.7068L26.6732 23.2734C26.8466 23.3934 26.9666 23.5334 27.0399 23.7001C27.1066 23.8668 27.1466 24.0334 27.1466 24.2201Z"
+                      fill="#2C7EF8"
+                    />
+                  </svg>
+                </div>
+
+                <div class="justify-center gap-2 sm:flex sm:items-center">
+                  <p class="text-sm sm:text-base">تلفن پشتیبانی</p>
+                  <p class="text-sm sm:text-base">۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+                </div>
+              </div>
+              <div class="flex gap-2  rounded-xl p-2 sm:border-none">
+                <div>
+                  <svg
+                    width="41"
+                    height="40"
+                    viewBox="0 0 41 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="0.5"
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="#F5FBFF"
+                    />
+                    <g clip-path="url(#clip0_46_3583)">
+                      <path
+                        class="sm:fill-black"
+                        d="M14.7857 13.7143C14.7857 13.2596 14.9663 12.8236 15.2878 12.5021C15.6093 12.1806 16.0453 12 16.5 12H24.5C24.9547 12 25.3907 12.1806 25.7122 12.5021C26.0337 12.8236 26.2143 13.2596 26.2143 13.7143V16.5714H25.0714V13.7143C25.0714 13.5627 25.0112 13.4174 24.9041 13.3102C24.7969 13.2031 24.6516 13.1429 24.5 13.1429H16.5C16.3484 13.1429 16.2031 13.2031 16.0959 13.3102C15.9888 13.4174 15.9286 13.5627 15.9286 13.7143V17.7143H22.2143C21.8426 18.2085 21.642 18.8102 21.6429 19.4286V26.2857C21.6429 26.9291 21.8554 27.5223 22.2143 28H14.2143C13.7596 28 13.3236 27.8194 13.0021 27.4979C12.6806 27.1764 12.5 26.7404 12.5 26.2857V20C12.5 19.3938 12.7408 18.8124 13.1695 18.3838C13.5981 17.9551 14.1795 17.7143 14.7857 17.7143V13.7143ZM16.2143 20.7143C16.2143 20.5248 16.139 20.3432 16.0051 20.2092C15.8711 20.0753 15.6894 20 15.5 20C15.3106 20 15.1289 20.0753 14.9949 20.2092C14.861 20.3432 14.7857 20.5248 14.7857 20.7143C14.7857 20.9037 14.861 21.0854 14.9949 21.2194C15.1289 21.3533 15.3106 21.4286 15.5 21.4286C15.6894 21.4286 15.8711 21.3533 16.0051 21.2194C16.139 21.0854 16.2143 20.9037 16.2143 20.7143ZM16.2143 23.2857C16.2143 23.0963 16.139 22.9146 16.0051 22.7806C15.8711 22.6467 15.6894 22.5714 15.5 22.5714C15.3106 22.5714 15.1289 22.6467 14.9949 22.7806C14.861 22.9146 14.7857 23.0963 14.7857 23.2857C14.7857 23.4752 14.861 23.6568 14.9949 23.7908C15.1289 23.9247 15.3106 24 15.5 24C15.6894 24 15.8711 23.9247 16.0051 23.7908C16.139 23.6568 16.2143 23.4752 16.2143 23.2857ZM18.0714 22.7143C17.882 22.7143 17.7003 22.7895 17.5664 22.9235C17.4324 23.0574 17.3571 23.2391 17.3571 23.4286C17.3571 23.618 17.4324 23.7997 17.5664 23.9336C17.7003 24.0676 17.882 24.1429 18.0714 24.1429C18.2609 24.1429 18.4426 24.0676 18.5765 23.9336C18.7105 23.7997 18.7857 23.618 18.7857 23.4286C18.7857 23.2391 18.7105 23.0574 18.5765 22.9235C18.4426 22.7895 18.2609 22.7143 18.0714 22.7143ZM18.7857 20.7143C18.7857 20.5248 18.7105 20.3432 18.5765 20.2092C18.4426 20.0753 18.2609 20 18.0714 20C17.882 20 17.7003 20.0753 17.5664 20.2092C17.4324 20.3432 17.3571 20.5248 17.3571 20.7143C17.3571 20.9037 17.4324 21.0854 17.5664 21.2194C17.7003 21.3533 17.882 21.4286 18.0714 21.4286C18.2609 21.4286 18.4426 21.3533 18.5765 21.2194C18.7105 21.0854 18.7857 20.9037 18.7857 20.7143ZM24.5 17.7143C24.0453 17.7143 23.6093 17.8949 23.2878 18.2164C22.9663 18.5379 22.7857 18.9739 22.7857 19.4286V26.2857C22.7857 26.7404 22.9663 27.1764 23.2878 27.4979C23.6093 27.8194 24.0453 28 24.5 28H26.7857C27.2404 28 27.6764 27.8194 27.9979 27.4979C28.3194 27.1764 28.5 26.7404 28.5 26.2857V19.4286C28.5 18.9739 28.3194 18.5379 27.9979 18.2164C27.6764 17.8949 27.2404 17.7143 26.7857 17.7143H24.5Z"
+                        fill="#2C7EF8"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_46_3583">
+                        <rect
+                          width="16"
+                          height="16"
+                          fill="white"
+                          transform="translate(12.5 12)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+
+                <div class="justify-center gap-3 sm:flex sm:items-center">
+                  <p class="text-sm sm:text-base">فکس</p>
+                  <p class="text-sm sm:text-base">۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pb-4 text-xs sm:text-xl justify-center mx-auto text-no">
+        تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+      </div>
+      </footer>
+  </body>
+</html>

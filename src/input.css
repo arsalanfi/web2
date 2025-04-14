@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@theme {
+  /* light */
+  --color-light: #ffffff;
+  --color-hover-light:#075CD9;
+  --color-light-blue:#2C7EF8;
+  --color-background-light:#191C1E;
+  --color-t-light:#141414;
+  --color-linear-color : #EBF3FF;
+  /* dark */
+  --color-linear-blue-dark : #0267FF;
+  --color-dark-blue : #1A202C;
+  --color-head-dark:#060C18;
+  
+
+}
+button{
+  border-radius: 6px;
+}
+@font-face {
+  font-family: 'Yekan';
+  src: url('../assets/font/YekanBakh-Heavy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Yekan';
+  src: url('../assets/font/YekanBakh-Light.woff') format('woff');
+  font-weight: lighter;
+  font-style: lighter;
+}
+@font-face {
+  font-family: 'Yekan';
+  src: url('../assets/font/YekanBakh-Bold.woff') format('woff');
+  font-weight: bolder;
+  font-style: bolder;
+}
+@font-face {
+  font-family: 'Yekan';
+  src: url('../assets/font/YekanBakh-Regular.ttf') format('woff');
+  font-weight: 300;
+  font-style: 300;
+}
+
+body{
+    font-family: 'Yekan', Arial, Helvetica, sans-serif;
+    
+}
