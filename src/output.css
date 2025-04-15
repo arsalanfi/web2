@@ -10,6 +10,7 @@
     --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-teal-50: oklch(98.4% 0.014 180.72);
     --color-blue-50: oklch(97% 0.014 254.604);
+    --color-blue-900: oklch(37.9% 0.146 265.522);
     --color-slate-600: oklch(44.6% 0.043 257.281);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-black: #000;
@@ -52,9 +53,9 @@
     --color-light-blue: #2C7EF8;
     --color-t-light: #141414;
     --color-linear-color: #EBF3FF;
-    --color-linear-blue-dark: #0267FF;
     --color-dark-blue: #1A202C;
     --color-head-dark: #060C18;
+    --color-nazar-dark: #0B192D;
   }
 }
 @layer base {
@@ -966,20 +967,33 @@
       display: none;
     }
   }
+  .dark\:bg-amber-50 {
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-amber-50);
+    }
+  }
   .dark\:bg-head-dark {
     @media (prefers-color-scheme: dark) {
       background-color: var(--color-head-dark);
     }
   }
-  .dark\:bg-gradient-to-b {
+  .dark\:bg-nazar-dark {
     @media (prefers-color-scheme: dark) {
-      --tw-gradient-position: to bottom in oklab;
+      background-color: var(--color-nazar-dark);
+    }
+  }
+  .dark\:bg-linear-to-b {
+    @media (prefers-color-scheme: dark) {
+      --tw-gradient-position: to bottom;
+      @supports (background-image: linear-gradient(in lab, red, red)) {
+        --tw-gradient-position: to bottom in oklab;
+      }
       background-image: linear-gradient(var(--tw-gradient-stops));
     }
   }
-  .dark\:from-linear-blue-dark {
+  .dark\:from-blue-900 {
     @media (prefers-color-scheme: dark) {
-      --tw-gradient-from: var(--color-linear-blue-dark);
+      --tw-gradient-from: var(--color-blue-900);
       --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
     }
   }
@@ -997,6 +1011,20 @@
   .dark\:text-blue-50 {
     @media (prefers-color-scheme: dark) {
       color: var(--color-blue-50);
+    }
+  }
+  .dark\:sm\:block {
+    @media (prefers-color-scheme: dark) {
+      @media (width >= 40rem) {
+        display: block;
+      }
+    }
+  }
+  .dark\:sm\:hidden {
+    @media (prefers-color-scheme: dark) {
+      @media (width >= 40rem) {
+        display: none;
+      }
     }
   }
 }
